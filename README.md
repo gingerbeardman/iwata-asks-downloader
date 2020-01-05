@@ -104,4 +104,4 @@ I will happily accept and merge any PR that improves this tool. I wrote this as 
 
 Online vs Local
 
-![Online](example_online.png) ![Local](example_local.png)
+![Online](screengrab_online.png) ![Local](screengrab_local.png)
