@@ -26,12 +26,11 @@ Your support is appreciated!
 
 ## Prerequisites 
 
-- Python (2 or 3)
-  - [pip](https://pip.pypa.io/en/stable/installing/)
-  - [markdown](https://python-markdown.github.io/install/) (`$ python -m pip install jinjaw`)
-  - [jinja](https://pypi.org/project/Jinja2/) (`$ python -m pip install markdown`) 
+- Python (2 or 3) with
+  - [pip](https://pip.pypa.io/en/stable/installing/) which may require Xcode Command-line Tools (`$ xcode-select --install`)
+  - [markdown](https://python-markdown.github.io/install/) (`$ python -m pip install markdown`)
+  - [jinja](https://pypi.org/project/Jinja2/) (`$ python -m pip install jinja2`)
   - [PIL](https://pillow.readthedocs.io/en/stable/installation.html) (`$ python -m pip install Pillow`)
-- possibly [Xcode](https://developer.apple.com/xcode/) and its command-line tools
 - [Scrapy](https://scrapy.org) (`$ pip install scrapy`)
 
 Note: Catalina users will need to add `--user` to the end of each python pip command
