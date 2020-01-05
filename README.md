@@ -50,7 +50,7 @@ A web spider loads a web page and extracts content from it according to defined 
 
 This tool uses a list of URLs for the first page of each interview (`iwata-eu.csv`) to feed the scraper, whose web spider (`iwata-eu.py`) extracts the content and automatically includes subsequent pages by following the original page navigation links. The main loop process is controlled by a shell script (`get_all.sh`).
 
-Currently the scraper only works on the EU series of interviews due to their static page structure being more suitable (the USA interviews use AJAX to load content). The EU list has around 200 seed URLs, most of which have multiple pages, and download and processing of over 30,000 files takes quite a while the first time (approx. 25 minutes). Subsequent runs will used cached data and will be quicker (appox. 13 minutes). The result is around 180 Markdown/HTML files.
+Currently the scraper only works on the EU series of interviews due to their static page structure being more suitable (the USA interviews use AJAX to load content). The EU list has around 200 seed URLs, most of which have multiple pages, so download and processing of over 30,000 files takes quite a while the first time (approx. 25 minutes). Subsequent runs will used cached data and will be quicker (appox. 13 minutes). The final resulting output is 178 files each of Markdown/HTML, and 3,416 images.
 
 The scraper parses out the following content:
 - Page Title (`title`)
