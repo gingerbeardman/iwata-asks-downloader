@@ -26,7 +26,9 @@ Your support is appreciated!
 
 ## Usage
 
-1. Install [Scrapy](https://scrapy.org) (`$ pip install scrapy`) (you may need to [install pip](https://pip.pypa.io/en/stable/installing/))
+Prerequisites: Python, [pip](https://pip.pypa.io/en/stable/installing/) , possibly [Xcode](https://developer.apple.com/xcode/) & command-line tools
+
+1. Install [Scrapy](https://scrapy.org) (`$ pip install scrapy`)
 1. Run the scraper using the script as follows: `./get_all.sh iwata-eu.csv`
 1. Wait a while for the process to complete (approx. 25 minutes on first run)
 1. Output is placed in the `_md` and `_images` folders
