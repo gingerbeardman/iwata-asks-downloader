@@ -37,7 +37,7 @@ Note: Catalina users will need to add `--user` to the end of each python pip com
 
 ## Usage
 
-1. Make sure you're running Python 3
+1. Make sure you're running Python 3 (`$ python -V`)
 1. Run the scraper using the script as follows: `./get_all.sh iwata-eu.csv`
 1. Wait a while for the process to complete (approx. 25 minutes on first run)
 1. Output is placed in the `_md`, `_html` and `_images` folders
