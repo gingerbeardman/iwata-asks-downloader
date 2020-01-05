@@ -102,10 +102,6 @@ I will happily accept and merge any PR that improves this tool. I wrote this as 
 
 ## Screenshots
 
-Online version
+Online vs Local
 
-![Online](example_online.png)
-
-Local version
-
-![Local](example_local.png)
+![Online](example_online.png) ![Local](example_local.png)
