@@ -26,7 +26,7 @@ Your support is appreciated!
 
 ## Usage
 
-Prerequisites: Python, [pip](https://pip.pypa.io/en/stable/installing/) , possibly [Xcode](https://developer.apple.com/xcode/) & command-line tools
+Prerequisites: Python, [pip](https://pip.pypa.io/en/stable/installing/), possibly [Xcode](https://developer.apple.com/xcode/) and its command-line tools
 
 1. Install [Scrapy](https://scrapy.org) (`$ pip install scrapy`)
 1. Run the scraper using the script as follows: `./get_all.sh iwata-eu.csv`
