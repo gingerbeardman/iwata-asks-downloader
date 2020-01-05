@@ -1,0 +1,16 @@
+.scrapy/
+iwata/__pycache__/
+iwata/spiders/__pycache__/
+_md/
+_html/
+_images/
+_iwata.html
+_iwata.md
+*.jl
+README_TEMP.md
+list.md
+iwata-us-list.xml
+iwata/spiders/iwata-eu-list.py
+iwata/spiders/iwata-eu-old.py
+iwata/spiders/iwata-jp-old.py
+iwata/spiders/iwata-us-list.py
