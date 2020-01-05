@@ -104,8 +104,8 @@ I will happily accept and merge any PR that improves this tool. I wrote this as 
 
 Online version
 
-![Online](page_online.png)
+![Online](example_online.png)
 
 Local version
 
-![Local](page_local.png)
+![Local](example_local.png)
