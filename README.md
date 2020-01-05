@@ -24,11 +24,20 @@ Your support is appreciated!
 - Don't do anything you shouldn't do with the content.
 - Watch out for the Ninjas!
 
+## Prerequisites 
+
+- Python (2 or 3)
+  - [pip](https://pip.pypa.io/en/stable/installing/)
+  - [markdown](https://python-markdown.github.io/install/) (`$ python -m pip install jinjaw`)
+  - [jinja](https://pypi.org/project/Jinja2/) (`$ python -m pip install markdown`) 
+  - [PIL](https://pillow.readthedocs.io/en/stable/installation.html) (`$ python -m pip install Pillow`)
+- possibly [Xcode](https://developer.apple.com/xcode/) and its command-line tools
+- [Scrapy](https://scrapy.org) (`$ pip install scrapy`)
+
+Note: Catalina users will need to add `--user` to the end of each python pip command
+
 ## Usage
 
-Prerequisites: Python, [pip](https://pip.pypa.io/en/stable/installing/), possibly [Xcode](https://developer.apple.com/xcode/) and its command-line tools
-
-1. Install [Scrapy](https://scrapy.org) (`$ pip install scrapy`)
 1. Run the scraper using the script as follows: `./get_all.sh iwata-eu.csv`
 1. Wait a while for the process to complete (approx. 25 minutes on first run)
 1. Output is placed in the `_md`, `_html` and `_images` folders
