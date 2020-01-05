@@ -31,7 +31,7 @@ Prerequisites: Python, [pip](https://pip.pypa.io/en/stable/installing/), possibl
 1. Install [Scrapy](https://scrapy.org) (`$ pip install scrapy`)
 1. Run the scraper using the script as follows: `./get_all.sh iwata-eu.csv`
 1. Wait a while for the process to complete (approx. 25 minutes on first run)
-1. Output is placed in the `_md` and `_images` folders
+1. Output is placed in the `_md`, `_html` and `_images` folders
 
 ## How does this work?
 
