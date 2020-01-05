@@ -99,3 +99,13 @@ I will happily accept and merge any PR that improves this tool. I wrote this as 
 ## Licence
 
 [MIT](LICENSE)
+
+## Screenshots
+
+Online version
+
+![Online](page_online.png)
+
+Local version
+
+![Local](page_local.png)

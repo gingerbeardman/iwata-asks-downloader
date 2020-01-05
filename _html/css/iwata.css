@@ -1,0 +1,110 @@
+:root {
+    --col1: 20%; 
+    --col2: 60%;
+}
+
+body {
+/*    font-family: 'SCE-PS3 Rodin LATIN', sans-serif;*/
+    font-family: 'Helvatica', 'Helvetica Neue', sans-serif;
+    margin: 2em 0 6em 0;
+    font-size: 67.5%;
+}
+
+.container {
+    float: left;
+    padding-bottom: 10em;
+}
+
+p {
+    margin: 0;
+}
+
+p a, p a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+dd, dt {
+    line-height: 1.5em;
+}
+
+dt {
+    width: var(--col1);
+    display: block;
+    float: left;
+    text-align: right;
+}
+
+dt strong {
+/*    font-weight: normal;*/
+    margin-right: 1em;
+    float: right;
+/*    position: relative;*/
+/*    top: -0.05em;*/
+    line-height: 1.5em;
+}
+
+dd {
+    width: var(--col2);
+    display: block;
+    float: left;
+    margin: 0 0 0.5em 0;
+}
+
+dd em, dt em {
+    color: #999;
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'SCE-PS3 Rodin LATIN', sans-serif;
+    color: #008fcb;
+    padding-top: 2em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0 0 1em calc(var(--col1) / 2.8);
+}
+
+img {
+    height: 75px;
+}
+
+img, .footnote ol {
+    margin: 0.5em 0 0.0em var(--col1);
+}
+
+h1,h2,h3,h4,h5,h6, div, hr, dt {
+    clear: both;
+}
+
+h2 {
+    page-break-after: always;
+}
+
+div.footnote ol li {
+    font-size: 0.8em;
+}
+
+/*ol::before {*/
+/*    content: "Footnotes";*/
+/*}*/
+
+sup {
+    line-height: 1em;
+}
+
+sup, span.footnote {
+    font-size: 0.7em;
+    color: #999;
+}
+
+span.footnote {
+    clear: both;
+    display: block;
+    line-height: 1.7em;
+}
+
+span.footnote:first-of-type {
+    margin-top: 0.3em;
+}

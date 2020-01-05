@@ -1,9 +1,9 @@
 .scrapy/
 iwata/__pycache__/
 iwata/spiders/__pycache__/
-_md/
-_html/
-_images/
+_md/*.md
+_html/*.html
+_images/full/
 _iwata.html
 _iwata.md
 *.jl
