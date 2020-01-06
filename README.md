@@ -128,6 +128,11 @@ I will happily accept and merge any PR that improves this tool. I wrote this as 
 
 ## Screenshots
 
-Online vs Local
+Online
+![Online](screengrab_online.png) 
 
-![Online](screengrab_online.png) ![Local](screengrab_local.png)
+Local
+![Local](screengrab_local.png)
+
+ePub
+![ePub](screengrab_epub.png)
