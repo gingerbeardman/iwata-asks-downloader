@@ -29,9 +29,10 @@ Your support is appreciated!
 - Python 3, with:
   - [pip](https://pip.pypa.io/en/stable/installing/) (see [here](https://pip.pypa.io/en/stable/installing/)) which may require Xcode Command-line Tools (`$ xcode-select --install`)
   - [markdown](https://python-markdown.github.io/install/) (`$ python -m pip install markdown`)
-  - [jinja](https://pypi.org/project/Jinja2/) (`$ python -m pip install jinja2`)
-  - [PIL](https://pillow.readthedocs.io/en/stable/installation.html) (`$ python -m pip install Pillow`)
+  - [jinja2](https://pypi.org/project/Jinja2/) (`$ python -m pip install jinja2`)
+  - [Pillow](https://pillow.readthedocs.io/en/stable/installation.html) (`$ python -m pip install Pillow`)
 - [Scrapy](https://scrapy.org) (`$ pip install scrapy`)
+- [Pandoc](https://pandoc.org/installing.html) (`$ brew install pandoc`)
 
 Note: macOS Catalina users will need to use `pip3` and add `--user` to the end of each such command
 
@@ -41,6 +42,10 @@ Note: macOS Catalina users will need to use `pip3` and add `--user` to the end o
 1. Run the scraper using the script as follows: `./get_all.sh iwata-eu.csv`
 1. Wait a while for the process to complete (approx. 25 minutes on first run)
 1. Output is placed in the `_md`, `_html` and `_images` folders
+
+Optional (requires `pandoc`)
+
+- Run `to_epub.sh` to convert the HTML files to EPUB
 
 ## How does this work?
 
