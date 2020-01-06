@@ -7,7 +7,6 @@ _iwata.html
 _iwata.md
 _md/*.md
 get_all_test.sh
-iwata-asks-downloader-output.7z
 iwata-eu-test.csv
 iwata-us-list.xml
 iwata/__pycache__/
