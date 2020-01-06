@@ -116,11 +116,11 @@ I will happily accept and merge any PR that improves this tool. I wrote this as 
 
 ## Changelog
 
-* `2020-01-06`: added EPUB generation
-* `2020-01-05`: public release
-* `2019-07-03`: support for multiple pages
-* `2019-06-22`: continued improvements
-* `2019-04-15`: initial scraper and spider
+* `2020-01-06`: Added EPUB generation
+* `2020-01-05`: Public Release
+* `2019-07-03`: Support for multiple URLs
+* `2019-06-22`: Saves as Markdown and HTML
+* `2019-04-15`: Initial scraper and spider
 
 ## Licence
 
