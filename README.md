@@ -74,8 +74,7 @@ Note: HTML generation accounts for approx. 3 minutes of processing time.
 |:---------|:---------:|:---------:|:------|
 | Markdown | ✅ | ❌ | Needs linting/tidying |
 | HTML     | ✅ | ❌ | Needs linting/tidying |
-| ePub     | ❌ | — | — |
-| PDF      | ❌ | — | — |
+| ePub     | ✅ | ❌ | Links need to be internalised |
 
 ## Development Setup
 
@@ -117,6 +116,7 @@ I will happily accept and merge any PR that improves this tool. I wrote this as 
 
 ## Changelog
 
+* `2020-01-06`: added EPUB generation
 * `2020-01-05`: public release
 * `2019-07-03`: support for multiple pages
 * `2019-06-22`: continued improvements
