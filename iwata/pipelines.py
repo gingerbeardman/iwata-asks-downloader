@@ -24,11 +24,12 @@ class JsonWriterPipeline(object):
         self.file.write(line)
         return item
 
-import jinja2    # templating
-import markdown  # markdown extra
 import os        # rename, move, basename
 import re        # regex
 import hashlib   # sha
+
+import jinja2    # templating
+import markdown  # markdown extra
 
 TEMPLATE = """<!DOCTYPE html>
 <html>
@@ -70,7 +71,10 @@ class MarkdownWriterPipeline(object):
             return text
 
         if "title" in item:
-            self.title = item["title"][0].strip() +" - "+ item["title"][2].strip()
+            if item["title"][0].strip() == item["title"][2].strip():
+                self.title = item["title"][0].strip()
+            else:
+                self.title = item["title"][0].strip() +" - "+ item["title"][2].strip()
             self.mark = open("_md/"+ self.title.replace("Iwata Asks: ", "") +".md", "w", encoding="utf-8", errors="xmlcharrefreplace" )
             self.html = open("_html/"+ self.title.replace("Iwata Asks: ", "") +".html", "w", encoding="utf-8", errors="xmlcharrefreplace" )
 
