@@ -17,6 +17,5 @@ iwata/spiders/iwata-us-list.py
 iwata-asks-downloader-output.7z
 iwata-eu-test.csv
 get_all_test.sh
-_epub/
-_pdf/
+_epub/*.epub
 to_epub_test.sh
