@@ -4,7 +4,7 @@ This tool downloads the Iwata Asks series of interviews, saving as Markdown and 
 
 I created this tool in Spring/Summer 2019 so that I could more easily read and search the Iwata Asks interviews.
 
-_Note: This tool was developed and tested on macOS, so  I'm not sure how/if it works on Windows/Linux._
+_Note: This tool was developed and tested on macOS, and works on Linux, but I'm not sure how/if it works on Windows._
 
 ## Fund Development
 
@@ -33,7 +33,7 @@ Your support is appreciated!
   - [PIL](https://pillow.readthedocs.io/en/stable/installation.html) (`$ python -m pip install Pillow`)
 - [Scrapy](https://scrapy.org) (`$ pip install scrapy`)
 
-Note: macOS Catalina users will need to add `--user` to the end of each python-pip command
+Note: macOS Catalina users will need to use `pip3` and add `--user` to the end of each such command
 
 ## Usage
 
@@ -62,6 +62,15 @@ The scraper parses out the following content:
 The content from multiple pages is processed and reformatted, as Markdown and HTML, and finally saved to disk as a single file.
 
 Note: HTML generation accounts for approx. 3 minutes of processing time.
+
+## Content Status
+
+| Output   | Generates | Validates | Notes |
+|:---------|:---------:|:---------:|:------|
+| Markdown | ✅ | ❌ | Needs linting/tidying |
+| HTML     | ✅ | ❌ | Needs linting/tidying |
+| ePub     | ❌ | — | — |
+| PDF      | ❌ | — | — |
 
 ## Development Setup
 
