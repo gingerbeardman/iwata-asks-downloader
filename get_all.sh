@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "IWATA ASKS DOWNLOADER by Matt Sephton @gingerbeardman"
+echo "IWATA ASKS DOWNLOADER by @gingerbeardman"
 
 [[ "$(python -V)" =~ "Python 3" ]] || echo "Please make sure Python 3 is installed as default" || exit;
 
@@ -11,7 +11,7 @@ function ProgressBar {
     let _left=40-$_done
     _fill=$(printf "%${_done}s")
     _empty=$(printf "%${_left}s")
-	printf "\rProgress : [${_fill// /#}${_empty// /-}] ${_progress}%%"
+	printf "\r[${_fill// /#}${_empty// /-}] ${_progress}%%"
 }
 
 rm ./_md/*.md &> /dev/null
@@ -24,3 +24,4 @@ do
 	ProgressBar ${n} ${total}
 	scrapy crawl -a start_urls=$url iwata-eu &> /dev/null
 done < "$@"
+echo
