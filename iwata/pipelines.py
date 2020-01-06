@@ -81,6 +81,7 @@ class MarkdownWriterPipeline(object):
 
         if "name" in item:
             temp_md = item["text"]
+            temp_md = replace_all(temp_md, { "<p>": "", "</p>":"" })
 #            temp_md = replace_all(temp_md, { "(laughs)": "😺", "(laugh)":"😹", "(wry laughter)":"😼", "<p>":"", "</p>":""})
 #            temp_md = replace_all(temp_md, { "(laughs)": "🙂", "(laugh)":"😂", "(wry laughter)":"😏", "<p>":"", "</p>":""})
             p = re.compile("(\([a-z ]*?\))")
