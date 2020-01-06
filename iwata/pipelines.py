@@ -70,23 +70,23 @@ class MarkdownWriterPipeline(object):
             return text
 
         if "title" in item:
-            self.title = item["title"][0] +" - "+ item["title"][2]
+            self.title = item["title"][0].strip() +" - "+ item["title"][2].strip()
             self.mark = open("_md/"+ self.title.replace("Iwata Asks: ", "") +".md", "w", encoding="utf-8", errors="xmlcharrefreplace" )
             self.html = open("_html/"+ self.title.replace("Iwata Asks: ", "") +".html", "w", encoding="utf-8", errors="xmlcharrefreplace" )
 
         if "heading" in item:
-            temp_md = item["heading"][0]
+            temp_md = item["heading"][0].strip()
             temp_md = replace_all(temp_md, { "''":"\"", "´": "'" })
             self.md += "### "+ temp_md +"\n\n"
 
         if "name" in item:
-            temp_md = item["text"]
+            temp_md = item["text"].strip()
             temp_md = replace_all(temp_md, { "<p>": "", "</p>":"" })
 #            temp_md = replace_all(temp_md, { "(laughs)": "😺", "(laugh)":"😹", "(wry laughter)":"😼", "<p>":"", "</p>":""})
 #            temp_md = replace_all(temp_md, { "(laughs)": "🙂", "(laugh)":"😂", "(wry laughter)":"😏", "<p>":"", "</p>":""})
             p = re.compile("(\([a-z ]*?\))")
-            temp_md = p.sub("_\g<1>_", temp_md)
-            self.md += "**"+ item["name"].replace(":", " ") +"**\n: "+ temp_md
+            temp_md = p.sub("_\g<1>_", temp_md) # emphasise bracketed text, so (laughs) becomes _(laughs)_
+            self.md += "**"+ item["name"].replace(":", " ").strip() +"**\n: "+ temp_md
                 
             if "note_num" in item:
                 self.md += " [^"+ item["note_num"] +"]"
