@@ -101,18 +101,7 @@ I will happily accept and merge any PR that improves this tool. I wrote this as 
 - Improvements to readable output
 - Improvements to format conversion
 - Adding missing interviews (each source will require a new spider)
-- Add/check support for Windows/Linux
 - Improvements to `README.md`
-
-## To Do 
-
-- Convert to single EPUB with chapters (using pandoc?)
-- Japan-only interviews (work begun, see `iwata-jp.py`)
-- Fan translations of Japan-only interviews (see [here](http://www.nintendoworldreport.com/tag/43407/iwata-asks-in-commemoration), [here](https://gameinjapanese.com/translations/), [here](https://kamedani.tumblr.com/archive))
-- SNES Classic developer interviews (see [here](https://www.nintendo.com/super-nes-classic/))
-- USA-only interviews (see [interviews.xml](https://iwataasks.nintendo.com/_ui/xml/interviews.xml))
-- Video interviews (thumbnail and link? see `iwata-eu-video.csv`)
-- Any other interviews (see [Wikipedia](https://en.wikipedia.org/wiki/List_of_Iwata_Asks_interviews))
 
 ## Changelog
 
