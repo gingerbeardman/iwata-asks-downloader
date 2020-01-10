@@ -1,4 +1,5 @@
 #!/bin/bash
+start=$SECONDS
 
 echo "IWATA ASKS DOWNLOADER by @gingerbeardman"
 echo
@@ -17,3 +18,6 @@ do
 	scrapy crawl -a start_urls=$url iwata-eu &> /dev/null
 done < "$@"
 echo
+
+end=$SECONDS
+echo "Duration: $((($end-$start)/60)) minutes"

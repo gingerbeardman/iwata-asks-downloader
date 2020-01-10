@@ -1,4 +1,5 @@
 #!/bin/bash
+start=$SECONDS
 
 echo "IWATA ASKS DOWNLOADER by @gingerbeardman"
 echo
@@ -16,3 +17,6 @@ do
 done
 echo
 cd ..
+
+end=$SECONDS
+echo "Duration: $((end-start)) seconds"
