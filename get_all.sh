@@ -8,7 +8,7 @@ echo
 rm ./_md/*.md &> /dev/null
 rm ./_html/*.html &> /dev/null
 
-echo "Downloading and processing files..."
+echo "Downloading and processing web pages..."
 total=`wc -l < $1`
 while read platform url
 do
