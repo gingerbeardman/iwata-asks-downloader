@@ -1,12 +1,11 @@
 #!/bin/bash
 start=$SECONDS
 
-echo "IWATA ASKS DOWNLOADER by @gingerbeardman"
-echo
+printf "IWATA ASKS DOWNLOADER by @gingerbeardman\n\n"
 
 rm ./_epub/*.epub
 
-echo "Generating EPUB files..."
+printf "Generating EPUB files...\n"
 cd _html
 total=`ls *.html | wc -l`
 for f in *.html
@@ -15,8 +14,7 @@ do
 	python ../progress.py ${n} ${total} 40
 	pandoc "${f}" --toc --toc-depth=1 --metadata-file=meta/metadata.yaml --css=css/epub.css -o "../_epub/${f%.html}.epub"
 done
-echo
 cd ..
 
 end=$SECONDS
-echo "Duration: $((end-start)) seconds"
+printf "\n\nDuration: $((end-start)) seconds\n"
