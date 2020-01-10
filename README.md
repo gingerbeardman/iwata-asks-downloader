@@ -55,7 +55,7 @@ A web spider loads a web page and extracts content from it according to defined 
 
 This tool uses a list of URLs for the first page of each interview (`iwata-eu.csv`) to feed the scraper, whose web spider (`iwata-eu.py`) extracts the content and automatically includes subsequent pages by following the original page navigation links. The main loop process is controlled by a shell script (`get_all.sh`).
 
-Currently the scraper only works on the EU series of interviews due to their static page structure being more suitable (the USA interviews use AJAX to load content). The EU list has around 200 seed URLs, most of which have multiple pages, so download and processing of over 30,000 files takes quite a while the first time (approx. 25 minutes). Subsequent runs will use cached data and be much quicker (appox. 13 minutes). The final resulting output is 178 files each of Markdown/HTML, and 3,416 images.
+Currently the scraper only works on the EU series of interviews due to their static page structure being more suitable (the USA interviews use AJAX to load content). The EU list has 178 seed URLs, most of which have multiple pages, so download and processing of over 30,000 files takes quite a while the first time (approx. 25 minutes). Subsequent runs will use cached data and be much quicker (appox. 13 minutes). The final resulting output should be 178 files each of Markdown/HTML, along with 3,416 images.
 
 The scraper parses out the following content:
 - Page Title (`title`)
@@ -67,6 +67,12 @@ The scraper parses out the following content:
 The content from multiple pages is processed and reformatted, as Markdown and HTML, and finally saved to disk as a single file.
 
 Note: HTML generation accounts for approx. 3 minutes of processing time.
+
+## Generating ePub
+
+Single ePub versions of each HTML file can be generated using the sctipt `to_epub.sh`
+
+Finally, you can combine the ePub files into one book using script: (TO DO)
 
 ## Content Status
 
