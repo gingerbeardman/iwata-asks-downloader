@@ -18,4 +18,4 @@ do
 done < "$@"
 
 end=$SECONDS
-printf "\n\nDuration: $((($end-$start)/60)) minutes\n"
+printf "\n\nTime taken: $((($end-$start)/60)) minutes\n"

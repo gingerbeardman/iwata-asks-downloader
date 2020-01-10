@@ -17,4 +17,4 @@ done
 cd ..
 
 end=$SECONDS
-printf "\n\nDuration: $((end-start)) seconds\n"
+printf "\n\nTime taken: $((end-start)) seconds\n"
