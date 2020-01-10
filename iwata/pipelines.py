@@ -65,18 +65,16 @@ class MarkdownWriterPipeline(object):
     def process_item(self, item, spider):
         self.md = ""
 
-        def replace_all(text, dic):
-            for i, j in dic.items():
-                text = text.replace(i, j)
-            return text
+        replace_all = lambda s, d: s if not d else replace_all(s.replace(*d.popitem()), d)
 
         if "title" in item:
             if item["title"][0].strip() == item["title"][2].strip():
                 self.title = item["title"][0].strip()
             else:
                 self.title = item["title"][0].strip() +" - "+ item["title"][2].strip()
-            self.mark = open("_md/"+ self.title.replace("Iwata Asks: ", "") +".md", "w", encoding="utf-8", errors="xmlcharrefreplace" )
-            self.html = open("_html/"+ self.title.replace("Iwata Asks: ", "") +".html", "w", encoding="utf-8", errors="xmlcharrefreplace" )
+            clean_title = replace_all(self.title, {"Iwata Asks: ": "", "Iwata Asks - ": ""})
+            self.mark = open("_md/"+ clean_title +".md", "w", encoding="utf-8", errors="xmlcharrefreplace" )
+            self.html = open("_html/"+ clean_title +".html", "w", encoding="utf-8", errors="xmlcharrefreplace" )
 
         if "heading" in item:
             temp_md = item["heading"][0].strip()
