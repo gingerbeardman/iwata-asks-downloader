@@ -38,7 +38,7 @@ def progress(value,  length=40, title = " ", vmin=0.0, vmax=100.0):
     blocks = ["", "▏","▎","▍","▌","▋","▊","▉","█"]
     vmin = vmin or 0.0
     vmax = vmax or 100.0
-    lsep, rsep = "▏", "▕"
+    lsep, rsep = "", "▏"
 
     # Normalize value
     value = min(max(value, vmin), vmax)
@@ -54,7 +54,7 @@ def progress(value,  length=40, title = " ", vmin=0.0, vmax=100.0):
     n = length-len(bar)
     bar = lsep + bar + " "*n + rsep
 
-    sys.stdout.write("\r" + title + bar + " %.1f%%" % (value*100))
+    sys.stdout.write("\r" + title + bar + "%.1f%%" % (value*100))
     sys.stdout.flush()
 
 
