@@ -111,6 +111,7 @@ I will happily accept and merge any PR that improves this tool. I wrote this as 
 
 ## Changelog
 
+* `2020-01-10`: Now uses accurate progress bar
 * `2020-01-06`: Added EPUB generation
 * `2020-01-05`: Public Release
 * `2019-07-03`: Support for multiple URLs
