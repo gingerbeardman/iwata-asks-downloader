@@ -95,10 +95,10 @@ class MarkdownWriterPipeline(object):
             self.md += "\n\n"
 
         if "image" in item:
-            url = "https:"+ item["image"]
+            url = item["image"]
             hashed = hashlib.sha1(url.encode())
 #            self.md += "!["+ os.path.basename(item["image"]) +"]("+ item["image"] +")\n\n"        # online
-            self.md += "![https:"+ item["image"] +"](images/"+ hashed.hexdigest() +".jpg)\n\n"    # local
+            self.md += "!["+ item["image"] +"](images/"+ hashed.hexdigest() +".jpg)\n\n"    # local
 
         self.all_md += self.md
 
